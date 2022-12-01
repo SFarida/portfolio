@@ -149,7 +149,6 @@ N/A
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
 
 👤 **Gueleu S. Farida**
 
@@ -165,9 +164,9 @@ N/A
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Mobile version]**
-- [ ] **[Contact form]**
-- [ ] **[Desktop version]**
+- [ ] **Mobile version**
+- [ ] **Contact form**
+- [ ] **Desktop version**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -205,13 +204,7 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
+N/A
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
