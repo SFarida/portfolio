@@ -723,6 +723,8 @@ body {
   width: 327px;
   border: none;
   background: #fbf8f7;
+  resize: none;
+  font-family: inherit;
 }
 
 .form_field_item4 button {
