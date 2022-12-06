@@ -717,6 +717,7 @@ body {
   border-left: none;
   border-bottom: 1px solid #dbd8d7;
   width: 327px;
+  padding-bottom: .8rem;
 }
 
 .form_field_item textarea {
