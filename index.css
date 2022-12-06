@@ -1,6 +1,7 @@
 body {
   width: 375px;
   margin: 0;
+  padding: 0;
 
   /* no unit */
 }
@@ -670,7 +671,7 @@ body {
   left: 0;
 
   /* no unit */
-  top: 6300px;
+  top: 6338px;
 }
 
 .form_item {
