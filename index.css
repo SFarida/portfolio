@@ -6,6 +6,16 @@ body {
   /* no unit */
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+
+  /* no unit */
+  box-sizing: border-box;
+}
+
 /** Intro */
 .header_container {
   position: absolute;
