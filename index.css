@@ -20,6 +20,12 @@ body {
 .menu a {
   color: white;
   text-decoration: none;
+  transition: font-weight 200ms;
+}
+
+.menu a:hover {
+  color: #ff6b00;
+  font-weight: bold;
 }
 
 .menu li {
