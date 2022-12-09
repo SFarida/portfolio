@@ -91,6 +91,16 @@ body {
   margin: 0 0 5% 5%;
 }
 
+#intro_image{
+  transform: scale(0);
+  animation: intro-image 5s easeInSine 2s;
+}
+
+@keyframes example {
+  from { transform: scale(0);}
+  to { transform: scale(1);}
+}
+
 .main_container h1 {
   font-family: "Crete Round", serif;
   font-style: normal;
