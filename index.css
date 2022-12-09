@@ -240,7 +240,7 @@ body {
 
 .recent_works_img {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   width: 60%;
 }
 
@@ -663,8 +663,8 @@ body {
   flex-direction: row;
   align-items: flex-start;
   gap: 58px;
-  width: 90%;
-  margin: 120px 5% 0 5%;
+  width: 80%;
+  margin: 120px 10% 0 10%;
 
   /* no unit */
 }
@@ -675,11 +675,11 @@ body {
   align-items: center;
   gap: 24px;
   flex-grow: 0;
-  align-self: center;
 }
 
 .form_item1 {
   order: 0;
+  width: 40%;
 }
 
 .form_item2 {
@@ -861,11 +861,6 @@ button :disabled {
 }
 
 @media screen and (max-width: 700px) {
-  .recent_works {
-    flex-direction: column;
-    margin-bottom: 120;
-  }
-
   .work_head {
     margin-bottom: 80px;
   }
@@ -877,7 +872,10 @@ button :disabled {
   .form {
     flex-direction: column;
     align-items: flex-start;
-    margin: 0 5% 0 5%;
+    width: 90%;
+    margin: 120px 5% 0 5%;
+
+    /* no unit */
   }
 
   .form_field_item4 {
@@ -887,6 +885,18 @@ button :disabled {
 
   .action {
     display: flex;
+  }
+
+  .form_item {
+    align-self: center;
+  }
+
+  .form_item1 {
+    width: 100%;
+  }
+
+  .form_item1 p {
+    text-align: center;
   }
 }
 
@@ -944,6 +954,11 @@ button :disabled {
     width: 100%;
   }
 
+  .recent_works {
+    flex-direction: column;
+    margin-bottom: 120;
+  }
+
   .intro_item1 {
     order: 0;
   }
@@ -972,5 +987,13 @@ button :disabled {
   .skills {
     flex-direction: column;
     align-items: center;
+  }
+
+  .skill_item {
+    align-items: center;
+  }
+
+  .skill_item li {
+    align-self: center;
   }
 }
