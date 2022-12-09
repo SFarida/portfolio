@@ -238,6 +238,12 @@ body {
   flex-grow: 0;
 }
 
+.recent_works_img {
+  display: flex;
+  justify-content: end;
+  width: 60%;
+}
+
 .recent_works h3 {
   font-family: 'Crete Round', serif;
   font-style: normal;
@@ -354,44 +360,7 @@ body {
 
 .other_works_item {
   width: 327px;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, -0.1) 61.94%), url('img/works/workPlaceholder.png');
-}
-
-.action {
-  height: 48px;
-  left: 0;
-  right: 0;
-
-  /* no unit */
-  background-color: #ff6b00;
-  display: flex;
-  justify-content: center;
-}
-
-.see_project_action_btn {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  gap: 10px;
-  width: 124px;
-  height: 48px;
-  left: calc(50% - 124px / 2);
-  top: calc(50% - 48px / 2);
-  background: #ff6b00;
-  border: none;
-  text-align: center;
-}
-
-.right_block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  left: calc(50% - 327px / 2);
-  bottom: 62px;
-  margin-bottom: 11px;
-  padding-left: 5%;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url('img/works/workPlaceholderHover.png');
 }
 
 .other_works_item h3 {
@@ -418,6 +387,72 @@ body {
   flex: none;
   order: 1;
   flex-grow: 0;
+}
+
+.about h3 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.37px;
+  color: #ff6b00;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 120px 24px 24px 24px;
+}
+
+.about p {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f4f5f7;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 24px;
+}
+
+.action {
+  height: 48px;
+  left: 0;
+  right: 0;
+
+  /* no unit */
+  background-color: #ff6b00;
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  text-align: center;
+  z-index: 2;
+}
+
+.see_project_action_btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 124px;
+  height: 48px;
+  left: calc(50% - 124px / 2);
+  top: calc(50% - 48px / 2);
+  background: #ff6b00;
+  border: none;
+  text-align: center;
+}
+
+.right_block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  left: calc(50% - 327px / 2);
+  bottom: 62px;
+  padding-left: 5%;
 }
 
 .projects_stack {
@@ -502,33 +537,6 @@ body {
   text-align: center;
 }
 
-.about h3 {
-  font-family: 'Crete Round', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
-  letter-spacing: 0.37px;
-  color: #ff6b00;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 120px 24px 24px 24px;
-}
-
-.about p {
-  font-family: 'Inter', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #f4f5f7;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 24px;
-}
-
 .about button {
   display: flex;
   flex-direction: row;
@@ -560,7 +568,7 @@ body {
 }
 
 .multi_post {
-  width: 100%;
+  width: 40%;
 }
 
 /** Skills */
@@ -576,12 +584,12 @@ body {
 .skill_item {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 0;
 
   /* no unit */
   flex: none;
   flex-grow: 0;
+  align-items: flex-start;
 }
 
 .skill_item1 {
@@ -623,7 +631,7 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
-  align-self: center;
+  align-self: flex-start;
 }
 
 .skill_item ul {
@@ -686,7 +694,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  text-align: center;
+  text-align: start;
   color: #172b4d;
 }
 
@@ -820,6 +828,28 @@ button :disabled {
   background: #f4f1f0;
 }
 
+.other_works_item :hover + .action {
+  visibility: visible;
+}
+
+.other_works_item :hover p {
+  visibility: hidden;
+}
+
+.other_works_item :hover h3 {
+  visibility: hidden;
+}
+
+.other_works_item :hover ul {
+  visibility: hidden;
+
+  /* display: none; */
+}
+
+.other_works_item :hover {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0) 61.94%), url('img/works/workPlaceholderHover.png');
+}
+
 @media screen and (max-width: 1000px) {
   .intro_item3 {
     margin: auto 0 12% 5%;
@@ -854,9 +884,13 @@ button :disabled {
     align-self: center;
     justify-content: center;
   }
+
+  .action {
+    display: flex;
+  }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .menu {
     display: none;
   }
@@ -900,9 +934,15 @@ button :disabled {
     flex-direction: column;
   }
 
-  /* #intro_image {
-    display: none;
-  } */
+  .recent_works_img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .multi_post {
+    width: 100%;
+  }
 
   .intro_item1 {
     order: 0;
