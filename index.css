@@ -240,7 +240,7 @@ body {
 
 .recent_works_img {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   width: 60%;
 }
 
