@@ -35,6 +35,7 @@ body {
   color: red;
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .item {
@@ -89,6 +90,17 @@ body {
 .intro_item3 {
   order: 2;
   margin: 0 0 5% 5%;
+}
+
+.intro__image {
+  opacity: 0;
+  animation: fade-in 2s 500ms forwards;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
 }
 
 .main_container h1 {
