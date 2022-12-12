@@ -139,7 +139,7 @@ or if you use css then run this instead of the latter command above
 
 ### Deployment
 
-N/A
+Take a look at my [portfolio](https://sfarida.github.io/portfolio/) 
 
 
 
