@@ -89,7 +89,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo" href="https://sfarida.github.io/portfolio/"></a>
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
 
@@ -139,7 +139,7 @@ or if you use css then run this instead of the latter command above
 
 ### Deployment
 
-Take a look at my [portfolio](https://sfarida.github.io/portfolio/) 
+Take a look at my [portfolio](https://sfarida.github.io/portfolio/).
 
 
 
