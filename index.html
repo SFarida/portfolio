@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-        <title>Portfolio</title>
+        <title>Farida's Portfolio</title>
         <link rel="stylesheet" href="index.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Poppins|Crete Round" />
         <!-- Template 2-->
@@ -333,14 +333,17 @@
                 </div>
                 <div class="form_item form_item2">
                     <form action="https://formspree.io/f/myyvrjpe" method="post">
-                        <div class="form_field_item form_field_item1">
-                            <input type="text" placeholder="Fullname" name="name" maxlength="30" required />
+                        <div class="form_field_item form_field_item1 required">
+                            <label for="form_input1"></label>
+                            <input id="form_input1" type="text" placeholder="Fullname" name="name" maxlength="30" required />
                         </div>
-                        <div class="form_field_item form_field_item2">
-                            <input type="email" placeholder="Email address" name="email" required />
+                        <div class="form_field_item form_field_item2 required">
+                            <label for="form_input2"></label>
+                            <input id="form_input2" type="email" placeholder="Email address" name="email" required />
                         </div>
-                        <div class="form_field_item form_field_item3">
-                            <textarea
+                        <div class="form_field_item form_field_item3 required">
+                            <label for="form_input3"></label>
+                            <textarea id="form_input3"
                                 maxlength="500"
                                 name="description"
                                 rows="5"

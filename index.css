@@ -868,6 +868,12 @@ button :disabled {
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0) 61.94%), url('img/works/workPlaceholderHover.png');
 }
 
+.required::before {
+  content:" *";
+  color: red;
+  float: right;
+}
+
 @media screen and (max-width: 1000px) {
   .intro_item3 {
     margin: auto 0 12% 5%;
