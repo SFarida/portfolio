@@ -869,7 +869,7 @@ button :disabled {
 }
 
 .required::before {
-  content:" *";
+  content: "*";
   color: red;
   float: right;
 }
