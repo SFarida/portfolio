@@ -81,7 +81,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> Learn more about this project [here](https://www.loom.com/share/13e11f179b454000909a27958117c224)
 
 - **[It is a sort of interative CV]**
 
