@@ -174,8 +174,8 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 8px;
-  width: 22px;
-  height: 22px;
+  /* width: 22px;
+  height: 22px; */
   border-radius: 8px;
   flex: none;
   flex-grow: 0;
@@ -846,7 +846,7 @@ button :disabled {
   background: #f4f1f0;
 }
 
-.other_works_item :hover + .action {
+.other_works_item :hover+.action {
   visibility: visible;
 }
 
@@ -927,6 +927,78 @@ button :disabled {
 @media screen and (max-width: 500px) {
   .menu {
     display: none;
+  }
+
+  .menu_bar a {
+    text-decoration: none;
+  }
+
+  .menu_bar #close_btn {
+    display: none;
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .show {
+    display: block !important;
+  }
+
+  .mobile_header {
+    flex-direction: column;
+    height: 50%;
+    padding-top: 10%;
+    gap: 15%;
+    justify-content: flex-start;
+  }
+
+  .mobile_header .menu_bar {
+    align-self: flex-end;
+    padding-right: 24px;
+  }
+
+  .mobile_header .flex_one {
+    align-self: flex-start;
+  }
+
+  .mobile_header .flex_two {
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .mobile_header li {
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+
+  .mobile_menu {
+    display: block;
+  }
+
+  .mobile_menu ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .mobile_menu a {
+    color: white;
+    text-decoration: none;
+    transition: font-weight 200ms;
+  }
+
+  .mobile_menu a:hover {
+    color: #ff6b00;
+    font-weight: bold;
+  }
+
+  .mobile_menu li {
+    margin-right: 10%;
   }
 
   .name {
