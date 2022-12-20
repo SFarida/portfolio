@@ -1,4 +1,4 @@
-function toggleMenu() {
+const toggleMenu = () => {
   const menu = document.getElementById('menuIcon');
   const header = document.getElementById('nav_');
   const closeButton = document.getElementById('close_btn');
@@ -17,16 +17,14 @@ function toggleMenu() {
     header.classList.remove('mobile_header');
     menu.classList.add('menu');
   }
-}
+};
 
-toggleMenu();
-
-function hideMenu() {
+const hideMenu = () => {
   document.getElementById('close_btn').classList.remove('show');
   document.getElementById('menu_hamburger').classList.remove('hide');
   document.getElementById('menuIcon').classList.remove('mobile_menu');
   document.getElementById('nav_').classList.remove('mobile_header');
   document.getElementById('menuIcon').classList.add('menu');
-}
-
-hideMenu();
+};
+console.log(toggleMenu());
+console.log(hideMenu());
