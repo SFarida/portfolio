@@ -344,7 +344,7 @@
                 </p>
             </div>
             <div class="form_item form_item2">
-                <form action="https://formspree.io/f/myyvrjpe" method="post">
+                <form method="post" id="contact_form">
                     <div class="form_field_item form_field_item1 required">
                         <label for="form_input1"></label>
                         <input id="form_input1" type="text" placeholder="Fullname" name="name" maxlength="30"
@@ -360,15 +360,16 @@
                             placeholder="Enter text here" required></textarea>
                     </div>
                     <div class="form_field_item form_field_item4">
+                        <!-- <button type="submit" onclick="validateForm()"> -->
                         <button type="submit">
                             <span class="btn_text">Get in touch</span>
                         </button>
+                        <span class="text-danger" id="validation_error_msg"></span>
                     </div>
+                    
                 </form>
             </div>
         </div>
-
-        <button id="myBtn" onclick="openModal()">Open Modal</button>
 
         <div id="myModal" class="modal">
             <!-- Modal content -->
