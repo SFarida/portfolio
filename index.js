@@ -298,6 +298,17 @@ const loadProjects = () => {
     right_block_div.appendChild(heading);
     right_block_div.appendChild(paragraph);
     right_block_div.appendChild(list);
+    
+    button.addEventListener('click',
+      function () {
+        const project_detail = project_details.find(({ id }) => id == projects[i].id);
+        const modal = document.getElementById('myModal')
+        const header = document.createTextNode(project_detail.title)
+        modal.childNodes[3].childNodes[3].childNodes[1].removeChild(modal.childNodes[3].childNodes[3].childNodes[1].childNodes[0])
+        modal.childNodes[3].childNodes[3].childNodes[1].appendChild(header)
+        document.getElementById("myModal").style.display = "block";
+      }
+    )
 
     // button.addEventListener('onclick', openModal(projects[i].id))
     // button.onclick = openModal(projects[i].id)
