@@ -286,6 +286,14 @@ window.onload = function () {
 
   // Validation form
   document.getElementById('contact_form').addEventListener('submit', validateForm);
+  
+  // Get form data in local storag if it exist
+  const formObj = JSON.parse(localStorage.getItem('formObj'))
+  if(formObj){
+    document.getElementById('form_input1').value = formObj.name;
+    document.getElementById('form_input2').value = formObj.email;
+    document.getElementById('form_input3').value = formObj.message;
+  }
 
 };
 
