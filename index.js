@@ -194,9 +194,9 @@ function validateForm(e) {
   const email = document.getElementById('form_input2').value;
   const formObj = {
     name: document.getElementById('form_input1').value,
-    email: email,
-    message: document.getElementById('form_input3').value
-  }
+    email,
+    message: document.getElementById('form_input3').value,
+  };
   const islowercase = checkLowerCase(email);
   const form = document.getElementById('contact_form');
   if (islowercase) {
@@ -282,19 +282,18 @@ const loadProjects = () => {
 
 window.onload = function () {
   // loading projects in work section
-  loadProjects(); 
+  loadProjects();
 
   // Validation form
   document.getElementById('contact_form').addEventListener('submit', validateForm);
-  
+
   // Get form data in local storag if it exist
-  const formObj = JSON.parse(localStorage.getItem('formObj'))
-  if(formObj){
+  const formObj = JSON.parse(localStorage.getItem('formObj'));
+  if (formObj) {
     document.getElementById('form_input1').value = formObj.name;
     document.getElementById('form_input2').value = formObj.email;
     document.getElementById('form_input3').value = formObj.message;
   }
-
 };
 
 window.onclick = function (event) {
