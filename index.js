@@ -32,182 +32,135 @@ const projects = [
   {
     id: 1,
     title: 'Profesional Art Printing Data 1',
+    modalTitle: 'Keeping track of hundreds of components website 1',
+    modalImage: 'img/snapshoot_Portfolio.png',
+    modalDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releax map lapora verita`,
+    technologies: {
+      tech1: 'html',
+      tech2: 'Bootstrap',
+      tech3: 'Ruby on rails',
+    },
+    LinkToLive: 'https://sfarida.github.io/portfolio/',
+    LinkToSource: 'https://github.com/SFarida/portfolio/',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standards',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
     id: 2,
     title: 'Profesional Art Printing Data 2',
+    modalTitle: 'Keeping track of hundreds of components website 2',
+    modalImage: 'img/snapshoot_Portfolio.png',
+    modalDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releax map lapora verita`,
+    technologies: {
+      tech1: 'html',
+      tech2: 'Bootstrap',
+      tech3: 'Ruby on rails',
+    },
+    LinkToLive: 'https://sfarida.github.io/portfolio/',
+    LinkToSource: 'https://github.com/SFarida/portfolio/',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
     id: 3,
     title: 'Profesional Art Printing Data 3',
+    modalTitle: 'Keeping track of hundreds of components website 3',
+    modalImage: 'img/snapshoot_Portfolio.png',
+    modalDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releax map lapora verita`,
+    technologies: {
+      tech1: 'html',
+      tech2: 'Bootstrap',
+      tech3: 'Ruby on rails',
+    },
+    LinkToLive: 'https://sfarida.github.io/portfolio/',
+    LinkToSource: 'https://github.com/SFarida/portfolio/',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
     id: 4,
     title: 'Profesional Art Printing Data 4',
+    modalTitle: 'Keeping track of hundreds of components website 4',
+    modalImage: 'img/snapshoot_Portfolio.png',
+    modalDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releax map lapora verita`,
+    technologies: {
+      tech1: 'html',
+      tech2: 'Bootstrap',
+      tech3: 'Ruby on rails',
+    },
+    LinkToLive: 'https://sfarida.github.io/portfolio/',
+    LinkToSource: 'https://github.com/SFarida/portfolio/',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
     id: 5,
     title: 'Profesional Art Printing Data 5',
+    modalTitle: 'Keeping track of hundreds of components website 5',
+    modalImage: 'img/snapshoot_Portfolio.png',
+    modalDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releax map lapora verita`,
+    technologies: {
+      tech1: 'html',
+      tech2: 'Bootstrap',
+      tech3: 'Ruby on rails',
+    },
+    LinkToLive: 'https://sfarida.github.io/portfolio/',
+    LinkToSource: 'https://github.com/SFarida/portfolio/',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
     id: 6,
     title: 'Profesional Art Printing Data 6',
+    modalTitle: 'Keeping track of hundreds of components website 7',
+    modalImage: 'img/snapshoot_Portfolio.png',
+    modalDescription: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
+      when an unknown printer took a galley of type and scrambled it 1960s with the 
+      releax map lapora verita`,
+    technologies: {
+      tech1: 'html',
+      tech2: 'Bootstrap',
+      tech3: 'Ruby on rails',
+    },
+    LinkToLive: 'https://sfarida.github.io/portfolio/',
+    LinkToSource: 'https://github.com/SFarida/portfolio/',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
-  },
-];
-
-const projectDetails = [
-  {
-    id: 1,
-    image: 'img/snapshoot_Portfolio.png',
-    title: 'Keeping track of hundreds of components website 1',
-    titlesmall: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releax map lapora verita`,
-    technologies: {
-      tech1: 'html',
-      tech2: 'Bootstrap',
-      tech3: 'Ruby on rails',
-    },
-    LinkToLive: 'https://sfarida.github.io/portfolio/',
-    LinkToSource: 'https://github.com/SFarida/portfolio/',
-  },
-  {
-    id: 2,
-    image: 'img/snapshoot_Portfolio.png',
-    title: 'Keeping track of hundreds of components website 2',
-    titlesmall: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releax map lapora verita`,
-    technologies: {
-      tech1: 'html',
-      tech2: 'Bootstrap',
-      tech3: 'Ruby on rails',
-    },
-    LinkToLive: 'https://sfarida.github.io/portfolio/',
-    LinkToSource: 'https://github.com/SFarida/portfolio/',
-  },
-  {
-    id: 3,
-    image: 'img/snapshoot_Portfolio.png',
-    title: 'Keeping track of hundreds of components website 3',
-    titlesmall: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releax map lapora verita`,
-    technologies: {
-      tech1: 'html',
-      tech2: 'Bootstrap',
-      tech3: 'Ruby on rails',
-    },
-    LinkToLive: 'https://sfarida.github.io/portfolio/',
-    LinkToSource: 'https://github.com/SFarida/portfolio/',
-  },
-  {
-    id: 4,
-    image: './imgnew/ImgPlaceholder(2).png',
-    title: 'Keeping track of hundreds of components website 4',
-    titlesmall: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releax map lapora verita`,
-    technologies: {
-      tech1: 'html',
-      tech2: 'Bootstrap',
-      tech3: 'Ruby on rails',
-    },
-    LinkToLive: 'https://sfarida.github.io/portfolio/',
-    LinkToSource: 'https://github.com/SFarida/portfolio/',
-  },
-  {
-    id: 5,
-    image: './imgnew/ImgPlaceholder(2).png',
-    title: 'Keeping track of hundreds of components website 5',
-    titlesmall: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releax map lapora verita`,
-    technologies: {
-      tech1: 'html',
-      tech2: 'Bootstrap',
-      tech3: 'Ruby on rails',
-    },
-    LinkToLive: 'https://sfarida.github.io/portfolio/',
-    LinkToSource: 'https://github.com/SFarida/portfolio/',
-  },
-  {
-    id: 6,
-    image: 'img/snapshoot_Portfolio.png',
-    title: 'Keeping track of hundreds of components website 6',
-    titlesmall: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releax map lapora verita`,
-    technologies: {
-      tech1: 'html',
-      tech2: 'Bootstrap',
-      tech3: 'Ruby on rails',
-    },
-    LinkToLive: 'https://sfarida.github.io/portfolio/',
-    ILinkToSource: 'https://github.com/SFarida/portfolio/',
-  },
-  {
-    id: 7,
-    image: 'img/snapshoot_Portfolio.png',
-    title: 'Multi-Post Stories',
-    titlesmall: 'Multi-Post Stories',
-    description: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it 1960s with the 
-      releax map lapora verita`,
-    technologies: {
-      tech1: 'html',
-      tech2: 'Bootstrap',
-      tech3: 'Ruby on rails',
-    },
-    LinkToLive: 'https://sfarida.github.io/portfolio/',
-    ILinkToSource: 'https://github.com/SFarida/portfolio/',
-  },
+  }
 ];
 
 // Get the modal
@@ -221,8 +174,8 @@ function closeModal() {
 // When the user clicks the button, open the modal
 function openModal() {
   const modal = document.getElementById('myModal');
-  const projectDetail = projectDetails[projectDetails.length - 1];
-  const header = document.createTextNode(projectDetail.title);
+  const projectDetail = projects[projects.length - 1];
+  const header = document.createTextNode('Multi-Post Stories');
   const title = modal.childNodes[3].childNodes[3].childNodes[1];
   title.removeChild(modal.childNodes[3].childNodes[3].childNodes[1].childNodes[0]);
   modal.childNodes[3].childNodes[3].childNodes[1].appendChild(header);
@@ -289,17 +242,13 @@ const loadProjects = () => {
 
     button.addEventListener('click',
       () => {
-        const projectDetail = projectDetails.find(({ id }) => id === projects[i].id);
         const modal = document.getElementById('myModal');
-        const header = document.createTextNode(projectDetail.title);
+        const header = document.createTextNode(projects[i].modalTitle);
         const title = modal.childNodes[3].childNodes[3].childNodes[1];
         title.removeChild(modal.childNodes[3].childNodes[3].childNodes[1].childNodes[0]);
         modal.childNodes[3].childNodes[3].childNodes[1].appendChild(header);
         document.getElementById('myModal').style.display = 'block';
       });
-
-    // button.addEventListener('onclick', openModal(projects[i].id))
-    // button.onclick = openModal(projects[i].id)
 
     container.appendChild(otherWorksItemDiv);
   }
