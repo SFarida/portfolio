@@ -443,7 +443,8 @@ body {
   /* no unit */
   background-color: #ff6b00;
   display: flex;
-  visibility: hidden;
+
+  /* visibility: hidden; */
   justify-content: center;
   text-align: center;
   z-index: 2;
@@ -847,28 +848,6 @@ button :disabled {
   background: #f4f1f0;
 }
 
-.other_works_item :hover + .action {
-  visibility: visible;
-}
-
-.other_works_item :hover p {
-  visibility: hidden;
-}
-
-.other_works_item :hover h3 {
-  visibility: hidden;
-}
-
-.other_works_item :hover ul {
-  visibility: hidden;
-
-  /* display: none; */
-}
-
-.other_works_item :hover {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0) 61.94%), url('img/works/workPlaceholderHover.png');
-}
-
 .required::before {
   content: "*";
   color: red;
@@ -878,16 +857,16 @@ button :disabled {
 /* The Modal (background) */
 #myModal {
   display: none;
-  position: fixed; 
-  z-index: 1; 
+  position: fixed;
+  z-index: 1;
   padding-top: 100px;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4); 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content */
@@ -901,10 +880,54 @@ button :disabled {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+
+.modal_header h4 {
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+}
+
+.modal_header button {
+  border: 1px solid #979493;
+  font-family: 'Poppins', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #3c3a39;
+}
+
+.modal_body p {
+  font-family: 'Inter', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  color: #344563;
+}
+
+.modal_body button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 12px;
+  top: calc(50% - 48px / 2 + 264.5px);
+  background: #f55800;
+  border: none;
+  color: white;
+}
+
+.button_container {
+  margin-bottom: 3rem;
 }
 
 .close:hover,
@@ -912,6 +935,26 @@ button :disabled {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.hover_action :hover + .action {
+  visibility: visible;
+}
+
+.hover_action :hover p {
+  visibility: hidden;
+}
+
+.hover_action :hover h3 {
+  visibility: hidden;
+}
+
+.hover_action :hover ul {
+  visibility: hidden;
+}
+
+.hover_action :hover {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0) 61.94%), url('img/works/workPlaceholderHover.png');
 }
 
 @media screen and (max-width: 1000px) {
@@ -965,6 +1008,28 @@ button :disabled {
 }
 
 @media screen and (max-width: 500px) {
+  .modal_content {
+    width: 95%;
+  }
+
+  .modal_header button {
+    line-height: 16px;
+  }
+
+  .modal_header h4 {
+    margin-bottom: 17%;
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+  }
+
+  .button_container {
+    margin-bottom: 2rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+
+    /* no unit */
+  }
+
   .menu {
     display: none;
   }
