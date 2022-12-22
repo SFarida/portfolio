@@ -99,6 +99,7 @@ window.onload = function () {
 
 
 function validateForm(e) {
+    e.preventDefault();
   let email = document.getElementById('form_input2').value;
   let islowercase = checkLowerCase(email);
   let form = document.getElementById('contact_form')
