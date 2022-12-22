@@ -192,11 +192,17 @@ const checkLowerCase = (str) => {
 function validateForm(e) {
   e.preventDefault();
   const email = document.getElementById('form_input2').value;
+  const formObj = {
+    name: document.getElementById('form_input1').value,
+    email: email,
+    message: document.getElementById('form_input3').value
+  }
   const islowercase = checkLowerCase(email);
   const form = document.getElementById('contact_form');
   if (islowercase) {
     form.action = 'https://formspree.io/f/myyvrjpe';
     form.submit();
+    localStorage.setItem('formObj', JSON.stringify(formObj));
   } else {
     document.getElementById('validation_error_msg').innerHTML = 'Your email address should be in lowercase';
   }
@@ -275,8 +281,12 @@ const loadProjects = () => {
 };
 
 window.onload = function () {
-  loadProjects();
+  // loading projects in work section
+  loadProjects(); 
+
+  // Validation form
   document.getElementById('contact_form').addEventListener('submit', validateForm);
+
 };
 
 window.onclick = function (event) {
