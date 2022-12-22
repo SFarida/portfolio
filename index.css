@@ -443,6 +443,7 @@ body {
   /* no unit */
   background-color: #ff6b00;
   display: flex;
+
   /* visibility: hidden; */
   justify-content: center;
   text-align: center;
@@ -847,28 +848,6 @@ button :disabled {
   background: #f4f1f0;
 }
 
-.hover_action :hover+.action {
-  visibility: visible;
-}
-
-.hover_action :hover p {
-  visibility: hidden;
-}
-
-.hover_action :hover h3 {
-  visibility: hidden;
-}
-
-.hover_action :hover ul {
-  visibility: hidden;
-
-  /* display: none; */
-}
-
-.hover_action :hover {
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0) 61.94%), url('img/works/workPlaceholderHover.png');
-}
-
 .required::before {
   content: "*";
   color: red;
@@ -901,7 +880,7 @@ button :disabled {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -913,7 +892,7 @@ button :disabled {
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .modal_header button {
@@ -923,7 +902,7 @@ button :disabled {
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #3C3A39;
+  color: #3c3a39;
 }
 
 .modal_body p {
@@ -941,12 +920,14 @@ button :disabled {
   align-items: flex-start;
   padding: 12px;
   gap: 12px;
+
   /* position: absolute; */
+
   /* width: 134px;
   height: 48px;
   left: 708px; */
-  top: calc(50% - 48px/2 + 264.5px);
-  background: #F55800;
+  top: calc(50% - 48px / 2 + 264.5px);
+  background: #f55800;
   border: none;
   color: white;
 }
@@ -958,7 +939,27 @@ button :disabled {
   cursor: pointer;
 }
 
+.hover_action :hover + .action {
+  visibility: visible;
+}
 
+.hover_action :hover p {
+  visibility: hidden;
+}
+
+.hover_action :hover h3 {
+  visibility: hidden;
+}
+
+.hover_action :hover ul {
+  visibility: hidden;
+
+  /* display: none; */
+}
+
+.hover_action :hover {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0) 61.94%), url('img/works/workPlaceholderHover.png');
+}
 
 @media screen and (max-width: 1000px) {
   .intro_item3 {

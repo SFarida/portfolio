@@ -1,4 +1,5 @@
-function toggleMenu() {
+/* eslint-disable no-unused-vars */
+const toggleMenu = () => {
   const menu = document.getElementById('menuIcon');
   const header = document.getElementById('nav_');
   const closeButton = document.getElementById('close_btn');
@@ -17,60 +18,56 @@ function toggleMenu() {
     header.classList.remove('mobile_header');
     menu.classList.add('menu');
   }
-}
+};
 
-// toggleMenu();
-
-function hideMenu() {
+const hideMenu = () => {
   document.getElementById('close_btn').classList.remove('show');
   document.getElementById('menu_hamburger').classList.remove('hide');
   document.getElementById('menuIcon').classList.remove('mobile_menu');
   document.getElementById('nav_').classList.remove('mobile_header');
   document.getElementById('menuIcon').classList.add('menu');
-}
-
-// hideMenu();
+};
 
 const projects = [
   {
-    id: '1',
+    id: 1,
     title: 'Profesional Art Printing Data 1',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry standards',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    id: '2',
+    id: 2,
     title: 'Profesional Art Printing Data 2',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    id: '3',
+    id: 3,
     title: 'Profesional Art Printing Data 3',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    id: '4',
+    id: 4,
     title: 'Profesional Art Printing Data 4',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    id: '5',
+    id: 5,
     title: 'Profesional Art Printing Data 5',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
   {
-    id: '6',
+    id: 6,
     title: 'Profesional Art Printing Data 6',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
   },
 ];
 
-const project_details = [
+const projectDetails = [
   {
     id: 1,
     image: 'img/snapshoot_Portfolio.png',
@@ -213,111 +210,107 @@ const project_details = [
   },
 ];
 
-
 // Get the modal
-let modal = document.getElementById("myModal");
-
-
+const modal = document.getElementById('myModal');
 
 // When the user clicks on (x), close the modal
 function closeModal() {
-  document.getElementById("myModal").style.display = "none";
+  document.getElementById('myModal').style.display = 'none';
 }
 
-// When the user clicks the button, open the modal 
+// When the user clicks the button, open the modal
 function openModal() {
-  const modal = document.getElementById('myModal')
-  const project_detail = project_details[project_details.length - 1]
-  const header = document.createTextNode(project_detail.title)
-  modal.childNodes[3].childNodes[3].childNodes[1].removeChild(modal.childNodes[3].childNodes[3].childNodes[1].childNodes[0])
-  modal.childNodes[3].childNodes[3].childNodes[1].appendChild(header)
-  document.getElementById("myModal").style.display = "block";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+  const modal = document.getElementById('myModal');
+  const projectDetail = projectDetails[projectDetails.length - 1];
+  const header = document.createTextNode(projectDetail.title);
+  const title = modal.childNodes[3].childNodes[3].childNodes[1];
+  title.removeChild(modal.childNodes[3].childNodes[3].childNodes[1].childNodes[0]);
+  modal.childNodes[3].childNodes[3].childNodes[1].appendChild(header);
+  document.getElementById('myModal').style.display = 'block';
 }
 
 const loadProjects = () => {
   const container = document.getElementById('other_works');
-  for (let i = 0; i < projects.length; i++) {
+  for (let i = 0; i < projects.length; i += 1) {
     // Creating the divs
-    const other_works_item_div = document.createElement('div');
-    const hover_action_div = document.createElement('div');
-    const right_block_div = document.createElement('div');
+    const otherWorksItemDiv = document.createElement('div');
+    const hoverActionDiv = document.createElement('div');
+    const rightBlockBiv = document.createElement('div');
     const heading = document.createElement('h3');
     const paragraph = document.createElement('p');
-    const action_div = document.createElement('div');
-    const button = document.createElement('button')
+    const actionDiv = document.createElement('div');
+    const button = document.createElement('button');
     const list = document.createElement('ul');
-    const button_span = document.createElement('span');
-    let list_items = [];
+    const buttonSpan = document.createElement('span');
+    const listItems = [];
 
     // Creating text nodes
-    h3_text = document.createTextNode(projects[i].title);
-    p_text = document.createTextNode(projects[i].description);
-    html_text = document.createTextNode(projects[i].projectSkills[0]);
-    boostrap_text = document.createTextNode(projects[i].projectSkills[1]);
-    ruby_text = document.createTextNode(projects[i].projectSkills[2]);
-    button_text = document.createTextNode('See Project')
+    const h3Text = document.createTextNode(projects[i].title);
+    const pText = document.createTextNode(projects[i].description);
+    const htmlText = document.createTextNode(projects[i].projectSkills[0]);
+    const boostrapText = document.createTextNode(projects[i].projectSkills[1]);
+    const rubyText = document.createTextNode(projects[i].projectSkills[2]);
+    const buttonText = document.createTextNode('See Project');
 
     // Adding the classes
-    other_works_item_div.classList.add('other_works_item1', 'other_works_item');
-    hover_action_div.classList.add('hover_action');
-    right_block_div.classList.add('right_block');
-    action_div.classList.add('action')
-    button.classList.add('see_project_action_btn')
-    list.classList.add('projects_stack')
-    button_span.classList.add('btn_text')
+    otherWorksItemDiv.classList.add('other_works_item1', 'other_works_item');
+    hoverActionDiv.classList.add('hover_action');
+    rightBlockBiv.classList.add('right_block');
+    actionDiv.classList.add('action');
+    button.classList.add('see_project_action_btn');
+    list.classList.add('projects_stack');
+    buttonSpan.classList.add('btn_text');
 
     // Appending the n+1 child to each div
-    heading.appendChild(h3_text);
-    paragraph.appendChild(p_text);
+    heading.appendChild(h3Text);
+    paragraph.appendChild(pText);
     // Loop through projecSkills to add text to list items
-    for (let j = 0; j < projects[i].projectSkills.length; j++) {
-      let list_item = document.createElement('li');
-      list_item.classList.add('projects_stack_item', 'projects_stack_item1')
-      let span = document.createElement('span');
-      let text = document.createTextNode(projects[i].projectSkills[j])
-      span.appendChild(text)
-      list_item.appendChild(span)
-      list_items.push(list_item)
+    for (let j = 0; j < projects[i].projectSkills.length; j += 1) {
+      const listItem = document.createElement('li');
+      listItem.classList.add('projects_stack_item', 'projects_stack_item1');
+      const span = document.createElement('span');
+      const text = document.createTextNode(projects[i].projectSkills[j]);
+      span.appendChild(text);
+      listItem.appendChild(span);
+      listItems.push(listItem);
     }
-    for (let j = 0; j < list_items.length; j++) {
-      list.appendChild(list_items[j])
+    for (let j = 0; j < listItems.length; j += 1) {
+      list.appendChild(listItems[j]);
     }
-    other_works_item_div.appendChild(hover_action_div);
-    other_works_item_div.appendChild(action_div);
-    button.appendChild(button_span);
-    action_div.appendChild(button);
-    button_span.appendChild(button_text)
-    hover_action_div.appendChild(right_block_div);
-    right_block_div.appendChild(heading);
-    right_block_div.appendChild(paragraph);
-    right_block_div.appendChild(list);
-    
+    otherWorksItemDiv.appendChild(hoverActionDiv);
+    otherWorksItemDiv.appendChild(actionDiv);
+    button.appendChild(buttonSpan);
+    actionDiv.appendChild(button);
+    buttonSpan.appendChild(buttonText);
+    hoverActionDiv.appendChild(rightBlockBiv);
+    rightBlockBiv.appendChild(heading);
+    rightBlockBiv.appendChild(paragraph);
+    rightBlockBiv.appendChild(list);
+
     button.addEventListener('click',
-      function () {
-        const project_detail = project_details.find(({ id }) => id == projects[i].id);
-        const modal = document.getElementById('myModal')
-        const header = document.createTextNode(project_detail.title)
-        modal.childNodes[3].childNodes[3].childNodes[1].removeChild(modal.childNodes[3].childNodes[3].childNodes[1].childNodes[0])
-        modal.childNodes[3].childNodes[3].childNodes[1].appendChild(header)
-        document.getElementById("myModal").style.display = "block";
-      }
-    )
+      () => {
+        const projectDetail = projectDetails.find(({ id }) => id === projects[i].id);
+        const modal = document.getElementById('myModal');
+        const header = document.createTextNode(projectDetail.title);
+        const title = modal.childNodes[3].childNodes[3].childNodes[1];
+        title.removeChild(modal.childNodes[3].childNodes[3].childNodes[1].childNodes[0]);
+        modal.childNodes[3].childNodes[3].childNodes[1].appendChild(header);
+        document.getElementById('myModal').style.display = 'block';
+      });
 
     // button.addEventListener('onclick', openModal(projects[i].id))
     // button.onclick = openModal(projects[i].id)
 
-    container.appendChild(other_works_item_div)
+    container.appendChild(otherWorksItemDiv);
   }
-}
-
+};
 
 window.onload = function () {
   loadProjects();
+};
+
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
+  }
 };
