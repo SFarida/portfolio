@@ -160,7 +160,7 @@ const projects = [
     LinkToSource: 'https://github.com/SFarida/portfolio/',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
     projectSkills: ['html', 'bootstrap', 'Ruby'],
-  }
+  },
 ];
 
 // Get the modal

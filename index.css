@@ -920,16 +920,14 @@ button :disabled {
   align-items: flex-start;
   padding: 12px;
   gap: 12px;
-
-  /* position: absolute; */
-
-  /* width: 134px;
-  height: 48px;
-  left: 708px; */
   top: calc(50% - 48px / 2 + 264.5px);
   background: #f55800;
   border: none;
   color: white;
+}
+
+.button_container {
+  margin-bottom: 3rem;
 }
 
 .close:hover,
@@ -953,8 +951,6 @@ button :disabled {
 
 .hover_action :hover ul {
   visibility: hidden;
-
-  /* display: none; */
 }
 
 .hover_action :hover {
@@ -1012,6 +1008,28 @@ button :disabled {
 }
 
 @media screen and (max-width: 500px) {
+  .modal_content {
+    width: 95%;
+  }
+
+  .modal_header button {
+    line-height: 16px;
+  }
+
+  .modal_header h4 {
+    margin-bottom: 17%;
+    font-family: 'Roboto', serif;
+    font-weight: 700;
+  }
+
+  .button_container {
+    margin-bottom: 2rem;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+
+    /* no unit */
+  }
+
   .menu {
     display: none;
   }
