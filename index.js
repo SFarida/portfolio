@@ -287,8 +287,49 @@ window.onload = function () {
   // Validation form
   document.getElementById('contact_form').addEventListener('submit', validateForm);
 
-  // Get form data in local storag if it exist
+  // Save data when typed
   const formObj = JSON.parse(localStorage.getItem('formObj'));
+  const formDataToStore = {
+    name: '',
+    email: '',
+    message: '',
+  };
+  const name = document.getElementById('form_input1');
+  const email = document.getElementById('form_input2');
+  const message = document.getElementById('form_input3');
+
+  name.addEventListener('input', () => {
+    if (formObj) {
+      formObj.name = name.value;
+      localStorage.setItem('formObj', JSON.stringify(formObj));
+    } else {
+      formDataToStore.name = name.value;
+      localStorage.setItem('formObj', JSON.stringify(formObj));
+    }
+  });
+  email.addEventListener('input', () => {
+    const islowercase = checkLowerCase(email.value);
+    if (islowercase) {
+      if (formObj) {
+        formObj.email = email.value;
+        localStorage.setItem('formObj', JSON.stringify(formObj));
+      } else {
+        formDataToStore.email = email.value;
+        localStorage.setItem('formObj', JSON.stringify(formObj));
+      }
+    }
+  });
+  message.addEventListener('input', () => {
+    if (formObj) {
+      formObj.message = message.value;
+      localStorage.setItem('formObj', JSON.stringify(formObj));
+    } else {
+      formDataToStore.message = message.value;
+      localStorage.setItem('formObj', JSON.stringify(formObj));
+    }
+  });
+
+  // Get form data in local storag if it exist
   if (formObj) {
     document.getElementById('form_input1').value = formObj.name;
     document.getElementById('form_input2').value = formObj.email;
