@@ -190,7 +190,6 @@ const checkLowerCase = (str) => {
 };
 
 function validateForm(e) {
-  e.preventDefault();
   const email = document.getElementById('form_input2').value;
   const formObj = {
     name: document.getElementById('form_input1').value,
@@ -210,7 +209,7 @@ function validateForm(e) {
 
 const loadProjects = () => {
   const container = document.getElementById('other_works');
-  for (let i = 0; i < projects.length; i += 1) {
+  for (let i = 0; i < projects.length-1; i += 1) {
     // Creating the divs
     const otherWorksItemDiv = document.createElement('div');
     const hoverActionDiv = document.createElement('div');
