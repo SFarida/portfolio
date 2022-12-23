@@ -303,8 +303,9 @@ window.onload = function () {
       formObj.name = name.value;
       localStorage.setItem('formObj', JSON.stringify(formObj));
     } else {
+      console.log("does not exist")
       formDataToStore.name = name.value;
-      localStorage.setItem('formObj', JSON.stringify(formObj));
+      localStorage.setItem('formObj', JSON.stringify(formDataToStore));
     }
   });
   email.addEventListener('input', () => {
@@ -315,7 +316,7 @@ window.onload = function () {
         localStorage.setItem('formObj', JSON.stringify(formObj));
       } else {
         formDataToStore.email = email.value;
-        localStorage.setItem('formObj', JSON.stringify(formObj));
+        localStorage.setItem('formObj', JSON.stringify(formDataToStore));
       }
     }
   });
@@ -325,7 +326,7 @@ window.onload = function () {
       localStorage.setItem('formObj', JSON.stringify(formObj));
     } else {
       formDataToStore.message = message.value;
-      localStorage.setItem('formObj', JSON.stringify(formObj));
+      localStorage.setItem('formObj', JSON.stringify(formDataToStore));
     }
   });
 
