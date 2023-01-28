@@ -28,7 +28,7 @@ After you're finished please remove all the comments and instructions!
   # Portfolio
   <br/>
 
-  <h3><b>My Portfolio</b></h3>
+  <h3><b>Portfolio is a mobile friendly website built with mobile-first approach</b></h3>
 
 </div>
 
